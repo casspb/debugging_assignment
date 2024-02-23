@@ -22,6 +22,12 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 
 function changeBGImage() {
 
+	//dropZones.forEach(puzzlePieces => {
+	//	if (puzzlePieces){
+	//		puzzleBoard.appendChild(puzzlePieces)
+	//	}
+   // });
+
 	//if (puzzleBoard.contains("puzzlePieces")) {
 	//	puzzlePiece.appendChild();
 	//}
