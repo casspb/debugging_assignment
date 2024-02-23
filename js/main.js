@@ -18,14 +18,52 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 // step 3
 // functionality always goes in the middle -> how do we want
 // the app to behave?
+
+
 function changeBGImage() {
+
+	//if (puzzleBoard.contains("puzzlePieces")) {
+	//	puzzlePiece.appendChild();
+	//}
+
 	// the `` is a JavaScript template string. It tells the JS enging to evaluate the expression
 	// inside the braces - run that little bit of code. In this case it's just pulling the ID of the
 	// button we clicked on and putting it at the end of the image name (0, 1, 2, 3)
 	// and updating the background-image style of the puzzle board element.
 
-	// bug fix #2 should go here. it's at most 3 lines of JS code.
+	//function resetPuzzlePieces() {
+		// Loop through each puzzle piece and remove it from the drop zone
+		///puzzlePieces.forEach(piece => {
+		
+			//if (piece.parentNode.classList.contains('drop-zone')) {
+				// If the puzzle piece is in a drop zone, remove it from the drop zone
+			//	puzzleBoard.appendChild(piece);
+		//	}
+	//	});
+	//}
+	
+	//function changeBGImage() {
+		// Call resetPuzzlePieces to reset puzzle pieces to default position
+		//resetPuzzlePieces();	
+	
+
+	
+	//function resetPuzzlePieces(){
+
+		//puzzlePieces.forEach(function(piece) {
+		//	piece.style.backgroundImage = '';
+		//});
+		//}
+		//resetPuzzlePieces();
+		
+	//need to check drop zones for pieces using a foreach loop, then use a return to reset peices 
+	//need an append child to put the pieces back
+	// if theButtons and  puzzlesPieces are on the puzzleboard, return puzzle pieces
+	//if theButton reset puzzlePieces
+	// bug fix #2 should go here. it's at most 3 lines of JS code. 
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+	
+
 }
 
 function handleStartDrag() { 
