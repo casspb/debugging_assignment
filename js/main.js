@@ -44,7 +44,41 @@ function handleDragOver(e) {
 function handleDrop(e) { 
 	e.preventDefault();
 	console.log('dropped something on me');
+
+	if (this.firstElementChild) {
+		console.log('Drop zone already contains a child element. Cannot drop another element.');
+        return;
+	}
+
+	
+	//let hasPiece = false;
+
+	//if (!hasPiece) {
+	//	console.log('dropped something on me');
+	
+
+	//hasPiece= true;
+	//} else {
+	//	console.log('There is already a piece in this drop zone. Cannot drop another piece.');
+	//}
+	
+	//let handleDropCount = 0;
+	 
+	//if (handleDropCount >= 1) {
+	//console.log('dropped something on me');
+	//} else {
+	//	console.log("drop zone already contains a puzzle piece")
+	//}
+
+
+	//if (dropZones.childElementCount=== 1){
+	//	dropZones.appendChild(puzzlePieces);
+
+	//} else {
+	//	console.log ("there is already a puzzle piece here");
+	//}
 	// bug fix #1 should go here, and it's at most 3 lines of JS code
+	//only one child element can be allowed in the dropzone, you need to be able to check if there is already an element in the drop zone, if there is, dont allow another element.
 
 	// this line is going to move the dragged piece from the left side of the board
 	// into whatever drop zone we choose. appendChild means "add element to the container"
