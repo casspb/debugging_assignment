@@ -19,8 +19,27 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 // functionality always goes in the middle -> how do we want
 // the app to behave?
 
-
+//function resetDropZones() {
+   // dropZones.forEach(dropZone => {
+        // Remove all child elements (puzzle pieces) from the drop zone
+   //     dropZone.innerHTML = '';
+  // });
+//}
+// still gets rid of puzzle pieces instead of
 function changeBGImage() {
+
+	 puzzlePieces.forEach(piece => {
+		document.querySelector(".puzzle-pieces").appendChild(piece);
+	 });
+	//resetDropZones();
+	
+	//const dropZones = e.currentTarget;
+
+	//if (dropZones.children.length > 0) {
+        // Remove all child elements from the drop zone
+   //     dropZones.innerHTML = '';
+   // }
+
 
 	//dropZones.forEach(puzzlePieces => {
 	//	if (puzzlePieces){
@@ -66,6 +85,7 @@ function changeBGImage() {
 	//need an append child to put the pieces back
 	// if theButtons and  puzzlesPieces are on the puzzleboard, return puzzle pieces
 	//if theButton reset puzzlePieces
+	// possibly need to use e.currentTarget
 	// bug fix #2 should go here. it's at most 3 lines of JS code. 
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 	
