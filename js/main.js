@@ -31,6 +31,7 @@ function changeBGImage() {
 	 puzzlePieces.forEach(piece => {
 		document.querySelector(".puzzle-pieces").appendChild(piece);
 	 });
+	 //for each loop, now understanding the piece element was needed as i now understand the elements in relation to the event listener, not needing to create a new way of listening for the click.
 	//resetDropZones();
 	
 	//const dropZones = e.currentTarget;
