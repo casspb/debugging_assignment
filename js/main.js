@@ -19,15 +19,19 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
 // functionality always goes in the middle -> how do we want
 // the app to behave?
 
-function resetDropZones() {
-    dropZones.forEach(dropZone => {
+//function resetDropZones() {
+   // dropZones.forEach(dropZone => {
         // Remove all child elements (puzzle pieces) from the drop zone
-        dropZone.innerHTML = '';
-    });
-}
-// still gets rid of puzzle pieces instead of returning them
+   //     dropZone.innerHTML = '';
+  // });
+//}
+// still gets rid of puzzle pieces instead of
 function changeBGImage() {
-	resetDropZones();
+
+	 puzzlePieces.forEach(piece => {
+		document.querySelector(".puzzle-pieces").appendChild(piece);
+	 });
+	//resetDropZones();
 	
 	//const dropZones = e.currentTarget;
 
