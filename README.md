@@ -1,6 +1,6 @@
 # Drag and Drop Reference
 
-TODO: Write a project description
+project description: drag puzzle pieces into the blurred image background to reveal the image! use smaller images to change your puzzle background, thus reseting puzzle pieces to try again!
 
 ## Contributing
 
@@ -12,7 +12,7 @@ TODO: Write a project description
 
 ## Credits
 
-TODO: Write credits
+acknowledgment: original creator Tina Vandervecht
 
 ## License
 MIT
